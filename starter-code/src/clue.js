@@ -121,7 +121,6 @@ function pickMistery() {
     misteryEnvelope[0] = randomSelector(charactersArray);
     misteryEnvelope[1] = randomSelector(weaponsArray);
     misteryEnvelope[2] = randomSelector(roomsArray);
-    console.log(misteryEnvelope);
     return misteryEnvelope;
 }
 function revealMistery (misteryEnvelope){

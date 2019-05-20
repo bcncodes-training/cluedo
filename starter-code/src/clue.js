@@ -1,9 +1,5 @@
-// Characters
 
-
-
-
-let mrGreen = [
+let mrGreen = 
     {
         first_name: "Jacob",
         last_name: "Green",
@@ -13,9 +9,8 @@ let mrGreen = [
         image: "https://pbs.twimg.com/profile_images/506787499331428352/65jTv2uC.jpeg",
         occupation: "Entrepreneur"
     }
-]
 
-let drOrchid = [
+let drOrchid = 
     {
         first_name: "Doctor",
         last_name: "Orchid",
@@ -25,9 +20,8 @@ let drOrchid = [
         image: "http://www.radiotimes.com/uploads/images/Original/111967.jpg",
         ocupation: "Scientist"
     }
-]
 
-let profPlum = [
+let profPlum = 
     {
         first_name: "Victor",
         last_name: "Plum",
@@ -37,9 +31,8 @@ let profPlum = [
         image: "https://metrouk2.files.wordpress.com/2016/07/professor-plum.jpg",
         occupation: "Designer"
     }
-]
 
-let missScarlet = [
+let missScarlet = 
     {
         first_name: "Kasandra",
         last_name: "Scarlet",
@@ -49,10 +42,9 @@ let missScarlet = [
         image: "https://metrouk2.files.wordpress.com/2016/07/miss-scarlett.jpg",
         occupation: "Actor"
     }
-]
 
 let mrsPeacock = 
-[{
+    {
         first_name: "Eleanor",
         last_name: "Peacock",
         color: "blue",
@@ -60,10 +52,10 @@ let mrsPeacock =
         age: 36,
         image: "https://metrouk2.files.wordpress.com/2016/07/mrs-peacock.jpg",
         occupation: "Socialité"
-    }]
+    }
 
 let mrMustard = 
-[{
+    {
         first_name: 'Jack',
         last_name: 'Mustard',
         color: 'yellow',
@@ -71,7 +63,7 @@ let mrMustard =
         age: 62,
         image: 'https://metrouk2.files.wordpress.com/2016/07/colonel-mustard.jpg',
         occupation: 'Retired Football player'
-    }]
+    }
 
     // Characters Collection
 var charactersArray = [mrGreen,drOrchid,profPlum,missScarlet,mrsPeacock,mrMustard];
@@ -110,7 +102,7 @@ var roomsArray = [
 let misteryEnvelope = new Array;
 
 pickMistery();
-revealMistery(misteryEnvelope);
+console.log(revealMistery(misteryEnvelope));
 
 ///////////////////////////////////////////////////////////////////////////////////////
 function randomSelector(mazo) {
@@ -126,7 +118,5 @@ function pickMistery() {
 function revealMistery (misteryEnvelope){
     return `${misteryEnvelope[0].first_name} ${misteryEnvelope[0].last_name} killed Mr.Boddy using the ${misteryEnvelope[1].name} in the ${misteryEnvelope[2].name}!!!!` ;
 }
-
-
 
 

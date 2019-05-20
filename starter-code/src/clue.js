@@ -18,7 +18,7 @@ let mrGreen = [
 let drOrchid = [
     {
         first_name: "Doctor",
-        lst_name: "Orchid",
+        last_name: "Orchid",
         color: "white",
         description: "PhD in plant toxicology. Adopted daughter of Mr. Boddy",
         age: 26,

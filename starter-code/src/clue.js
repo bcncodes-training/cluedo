@@ -14,7 +14,7 @@ let mrGreen =
 let drOrchid = 
     {
         first_name: "Doctor",
-        lst_name: "Orchid",
+        last_name: "Orchid",
         color: "white",
         description: "PhD in plant toxicology. Adopted daughter of Mr. Boddy",
         age: 26,
@@ -33,6 +33,7 @@ let profPlum =
         image: "https://metrouk2.files.wordpress.com/2016/07/professor-plum.jpg",
         occupation: "Designer"
     }
+
 
 let missScarlet = 
     {
@@ -108,10 +109,10 @@ pickMistery();
 revealMistery(misteryEnvelope);
 
 ///////////////////////////////////////////////////////////////////////////////////////
-
 function randomSelector(mazo) {
     return mazo[Math.floor(Math.random()*mazo.length)];
 }
+
 function pickMistery() {
     misteryEnvelope[0] = randomSelector(charactersArray);
     misteryEnvelope[1] = randomSelector(weaponsArray);
@@ -121,7 +122,6 @@ function pickMistery() {
 function revealMistery (misteryEnvelope){
     return `${misteryEnvelope[0].first_name} ${misteryEnvelope[0].last_name} killed Mr.Boddy using the ${misteryEnvelope[1].name} in the ${misteryEnvelope[2].name}!!!!` ;
 }
-
 
 
 

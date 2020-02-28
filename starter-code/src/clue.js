@@ -200,7 +200,7 @@ const weaponsArray = [
 
 const randomSelector = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-const pickMistery = () => {
+/* const pickMistery = () => {
     let card = [{killer: randomSelector(charactersArray.map((data) => `${data.first_name} ${data.last_name}`))}, 
                 {weapon: randomSelector(weaponsArray.map((e) => `${e.name} and its weight is ${e.weight}`))}, 
                 {room: randomSelector(roomsArray.map((e) => e.name))}];
@@ -211,4 +211,17 @@ console.log(pickMistery())
 let misteryEnvelope = pickMistery();
 
 const revealMistery = (arr) => `${arr.map(e => e.killer)} killed Mr.Boddy using the ${arr.map(e => e.weapon)} in the${arr.map(e => e.room)}!!!!`;
+console.log(revealMistery(misteryEnvelope)); */
+
+const pickMistery = () => {
+    let card = {killer: randomSelector(charactersArray.map((data) => `${data.first_name} ${data.last_name}`)), 
+                weapon: randomSelector(weaponsArray.map((e) => `${e.name} and its weight is ${e.weight}`)), 
+                room: randomSelector(roomsArray.map((e) => e.name))};
+    return card;
+};
+console.log(pickMistery())
+
+let misteryEnvelope = pickMistery();
+
+const revealMistery = (arr) => `${arr.killer} killed Mr.Boddy using the ${arr.weapon} in the${arr.room}!!!!`;
 console.log(revealMistery(misteryEnvelope));
